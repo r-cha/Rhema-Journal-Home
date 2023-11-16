@@ -8,8 +8,8 @@ const Home = (props) => {
     <>
       <div className="home-container">
         <Head>
-          <title>Rotating Thin Dugong</title>
-          <meta property="og:title" content="Rotating Thin Dugong" />
+          <title>Rhema Journal</title>
+          <meta property="og:title" content="Rhema Journal" />
         </Head>
         <div className="home-header">
           <span className="home-logo">Rhema Journal</span>
@@ -18,24 +18,29 @@ const Home = (props) => {
           <div className="home-hero1">
             <div className="home-container1">
               <h1 className="home-hero-heading heading1">
-                What is God saying?
+                What is God speaking?
               </h1>
               <span className="home-hero-sub-heading">
                 Pray through His written Word to hear His spoken word
               </span>
               <div className="home-btn-group">
-                <button className="home-hero-button1 button">
-                  Join TestFlight Beta
-                </button>
-                <button className="home-hero-button2 button">
+                <a
+                  href="https://testflight.apple.com/join/Fg8mhlTe"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-link button"
+                >
+                  Join the Beta
+                </a>
+                <a href="#details" className="home-link1 button">
                   Learn More →
-                </button>
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div className="home-details">
-          <div className="home-details1">
+          <div id="details" className="home-details1">
             <div className="home-container2">
               <h2 className="home-details-heading heading2">
                 <span>ῥῆμα (rhêma) n :</span>
@@ -89,14 +94,13 @@ const Home = (props) => {
             <span className="home-banner-sub-heading">
               Record the Word of God spoken through Scripture
             </span>
-            <button className="home-hero-button11 button">
+            <button className="home-hero-button1 button">
               Join TestFlight Beta
             </button>
           </div>
         </div>
         <div className="home-footer">
           <footer className="home-footer1">
-            <div className="home-separator"></div>
             <div className="home-container5">
               <span className="home-text3">
                 © 2023 Archa Solutions, All Rights Reserved.
@@ -146,11 +150,16 @@ const Home = (props) => {
             min-height: auto;
             align-items: center;
             padding-top: var(--dl-space-space-sixunits);
+            border-color: #414141;
+            border-width: 1px;
             padding-left: var(--dl-space-space-threeunits);
             padding-right: var(--dl-space-space-threeunits);
             flex-direction: column;
             padding-bottom: var(--dl-space-space-sixunits);
             justify-content: center;
+            border-top-width: 1px;
+            border-left-width: 0px;
+            border-right-width: 0px;
           }
           .home-container1 {
             gap: var(--dl-space-space-twounits);
@@ -178,10 +187,9 @@ const Home = (props) => {
             align-items: center;
             flex-direction: row;
           }
-          .home-hero-button1 {
+          .home-link {
             color: #414141;
             font-size: 18px;
-            transition: 0.3s;
             font-weight: bold;
             padding-top: 1.5rem;
             border-color: #fdeba0;
@@ -192,12 +200,7 @@ const Home = (props) => {
             padding-bottom: 1.5rem;
             background-color: #fdf5d3;
           }
-          .home-hero-button1:hover {
-            color: var(--dl-color-gray-white);
-            border-color: rgba(41, 20, 119, 0.9);
-            background-color: rgba(41, 20, 119, 0.9);
-          }
-          .home-hero-button2 {
+          .home-link1 {
             color: #414141;
             transition: 0.3s;
             font-weight: bold;
@@ -206,9 +209,10 @@ const Home = (props) => {
             padding-left: var(--dl-space-space-twounits);
             padding-right: var(--dl-space-space-twounits);
             padding-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
             background-color: transparent;
           }
-          .home-hero-button2:hover {
+          .home-link1:hover {
             border-color: var(--dl-color-gray-white);
           }
           .home-details {
@@ -286,6 +290,7 @@ const Home = (props) => {
             flex-direction: column;
             padding-bottom: var(--dl-space-space-fourunits);
             justify-content: flex-start;
+            background-color: #414141;
           }
           .home-container3 {
             display: flex;
@@ -294,6 +299,7 @@ const Home = (props) => {
             justify-content: flex-start;
           }
           .home-features-heading {
+            color: #ffffff;
             font-family: 'Raleway';
             line-height: 1.6;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
@@ -319,11 +325,16 @@ const Home = (props) => {
             display: flex;
             align-items: center;
             padding-top: var(--dl-space-space-sixunits);
+            border-color: #bbbbbb;
+            border-width: 1px;
             padding-left: var(--dl-space-space-fiveunits);
             padding-right: var(--dl-space-space-fiveunits);
             flex-direction: column;
             padding-bottom: var(--dl-space-space-sixunits);
             justify-content: flex-start;
+            background-color: #414141;
+            border-left-width: 0px;
+            border-right-width: 0px;
           }
           .home-banner-heading {
             color: var(--dl-color-gray-white);
@@ -337,10 +348,9 @@ const Home = (props) => {
             text-align: center;
             line-height: 1.6;
           }
-          .home-hero-button11 {
+          .home-hero-button1 {
             color: #373737;
             font-size: 18px;
-            transition: 0.3s;
             font-weight: bold;
             padding-top: 1.5rem;
             border-color: #fdeba0;
@@ -350,11 +360,6 @@ const Home = (props) => {
             padding-right: 3rem;
             padding-bottom: 1.5rem;
             background-color: #fdf5d3;
-          }
-          .home-hero-button11:hover {
-            color: var(--dl-color-gray-white);
-            border-color: rgba(41, 20, 119, 0.9);
-            background-color: rgba(41, 20, 119, 0.9);
           }
           .home-footer {
             flex: 0 0 auto;
@@ -376,24 +381,7 @@ const Home = (props) => {
             flex-direction: column;
             padding-bottom: var(--dl-space-space-twounits);
             justify-content: space-between;
-          }
-          .home-separator {
-            flex: 0 0 auto;
-            width: 100%;
-            height: 0px;
-            display: flex;
-            margin-top: var(--dl-space-space-twounits);
-            align-items: flex-start;
-            margin-left: 0px;
-            border-color: var(--dl-color-gray-800);
-            border-style: solid;
-            border-width: 1px;
-            margin-right: 0px;
-            margin-bottom: var(--dl-space-space-twounits);
-            flex-direction: row;
-            border-top-width: 0px;
-            border-left-width: 0px;
-            border-right-width: 0px;
+            background-color: #414141;
           }
           .home-container5 {
             flex: 0 0 auto;
@@ -428,6 +416,10 @@ const Home = (props) => {
               text-align: center;
               padding-left: var(--dl-space-space-threeunits);
               padding-right: var(--dl-space-space-threeunits);
+            }
+            .home-details-image {
+              width: 207px;
+              height: 207px;
             }
             .home-banner-sub-heading {
               max-width: 100%;
@@ -484,12 +476,6 @@ const Home = (props) => {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
-            .home-separator {
-              margin-top: var(--dl-space-space-oneandhalfunits);
-              margin-left: 0px;
-              margin-right: 0px;
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
             .home-container5 {
               align-items: center;
               flex-direction: column;
@@ -505,6 +491,7 @@ const Home = (props) => {
             }
             .home-hero1 {
               padding-top: var(--dl-space-space-twounits);
+              border-color: #414141;
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
@@ -515,9 +502,28 @@ const Home = (props) => {
             .home-btn-group {
               flex-direction: column;
             }
-            .home-hero-button2 {
+            .home-link {
+              color: rgb(65, 65, 65);
+              font-size: 18px;
+              font-weight: bold;
+              background-color: rgb(253, 245, 211);
+            }
+            .home-link1 {
+              color: rgb(65, 65, 65);
               margin-top: var(--dl-space-space-unit);
+              font-weight: bold;
               margin-left: 0px;
+              border-color: rgba(0, 0, 0, 0);
+              background-color: transparent;
+            }
+            .home-container2 {
+              width: 479px;
+            }
+            .home-details-heading {
+              width: 479px;
+            }
+            .home-details-sub-heading {
+              width: 100%;
             }
             .home-features1 {
               padding-top: var(--dl-space-space-twounits);
@@ -533,10 +539,6 @@ const Home = (props) => {
             }
             .home-footer1 {
               padding: var(--dl-space-space-unit);
-            }
-            .home-separator {
-              margin-top: var(--dl-space-space-oneandhalfunits);
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
             .home-container5 {
               align-items: center;
