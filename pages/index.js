@@ -141,7 +141,11 @@ const Home = (props) => {
             height: auto;
             display: flex;
             align-items: flex-start;
+            border-color: #414141;
+            border-width: 1px;
             justify-content: center;
+            border-left-width: 0px;
+            border-right-width: 0px;
           }
           .home-hero1 {
             width: 100%;
@@ -150,16 +154,11 @@ const Home = (props) => {
             min-height: auto;
             align-items: center;
             padding-top: var(--dl-space-space-sixunits);
-            border-color: #414141;
-            border-width: 1px;
             padding-left: var(--dl-space-space-threeunits);
             padding-right: var(--dl-space-space-threeunits);
             flex-direction: column;
             padding-bottom: var(--dl-space-space-sixunits);
             justify-content: center;
-            border-top-width: 1px;
-            border-left-width: 0px;
-            border-right-width: 0px;
           }
           .home-container1 {
             gap: var(--dl-space-space-twounits);
@@ -276,7 +275,7 @@ const Home = (props) => {
             align-items: center;
             flex-direction: column;
             justify-content: center;
-            background-color: var(--dl-color-secondary-grey400);
+            background-color: #414141;
           }
           .home-features1 {
             gap: var(--dl-space-space-threeunits);
@@ -290,7 +289,6 @@ const Home = (props) => {
             flex-direction: column;
             padding-bottom: var(--dl-space-space-fourunits);
             justify-content: flex-start;
-            background-color: #414141;
           }
           .home-container3 {
             display: flex;
@@ -316,8 +314,12 @@ const Home = (props) => {
             height: auto;
             display: flex;
             align-items: center;
+            border-color: #bbbbbb;
+            border-width: 1px;
             justify-content: center;
-            background-color: var(--dl-color-gray-black);
+            background-color: #414141;
+            border-left-width: 0px;
+            border-right-width: 0px;
           }
           .home-banner1 {
             gap: var(--dl-space-space-oneandhalfunits);
@@ -325,16 +327,11 @@ const Home = (props) => {
             display: flex;
             align-items: center;
             padding-top: var(--dl-space-space-sixunits);
-            border-color: #bbbbbb;
-            border-width: 1px;
             padding-left: var(--dl-space-space-fiveunits);
             padding-right: var(--dl-space-space-fiveunits);
             flex-direction: column;
             padding-bottom: var(--dl-space-space-sixunits);
             justify-content: flex-start;
-            background-color: #414141;
-            border-left-width: 0px;
-            border-right-width: 0px;
           }
           .home-banner-heading {
             color: var(--dl-color-gray-white);
@@ -368,7 +365,7 @@ const Home = (props) => {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: var(--dl-color-gray-black);
+            background-color: #414141;
           }
           .home-footer1 {
             width: 100%;
@@ -393,6 +390,19 @@ const Home = (props) => {
           }
           .home-text3 {
             color: var(--dl-color-secondary-gray500);
+          }
+          @media (max-width: 1600px) {
+            .home-banner1 {
+              background-color: transparent;
+            }
+          }
+          @media (max-width: 1200px) {
+            .home-banner1 {
+              background-color: transparent;
+            }
+            .home-footer1 {
+              background-color: transparent;
+            }
           }
           @media (max-width: 991px) {
             .home-hero1 {
