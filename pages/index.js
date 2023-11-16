@@ -235,6 +235,7 @@ const Home = (props) => {
           }
           .home-container2 {
             flex: 1;
+            width: auto;
             display: flex;
             align-items: flex-start;
             flex-direction: column;
@@ -397,6 +398,10 @@ const Home = (props) => {
             }
           }
           @media (max-width: 1200px) {
+            .home-details-image {
+              width: 300px;
+              height: 300px;
+            }
             .home-banner1 {
               background-color: transparent;
             }
@@ -421,6 +426,12 @@ const Home = (props) => {
               text-align: center;
               padding-left: var(--dl-space-space-threeunits);
               padding-right: var(--dl-space-space-threeunits);
+            }
+            .home-details1 {
+              width: 100%;
+              align-items: center;
+              flex-direction: column;
+              justify-content: center;
             }
             .home-details-sub-heading {
               text-align: center;
@@ -452,6 +463,8 @@ const Home = (props) => {
               justify-content: center;
             }
             .home-container2 {
+              flex: 1;
+              width: 100%;
               align-items: center;
               justify-content: flex-start;
             }
@@ -527,7 +540,7 @@ const Home = (props) => {
               background-color: transparent;
             }
             .home-container2 {
-              width: 479px;
+              width: 100%;
             }
             .home-details-heading {
               width: 479px;
