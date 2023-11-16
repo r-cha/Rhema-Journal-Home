@@ -242,7 +242,7 @@ const Home = (props) => {
             justify-content: flex-start;
           }
           .home-details-heading {
-            width: 637px;
+            width: auto;
             text-align: left;
             font-family: 'Raleway';
             line-height: 1.6;
@@ -541,9 +541,6 @@ const Home = (props) => {
             }
             .home-container2 {
               width: 100%;
-            }
-            .home-details-heading {
-              width: 479px;
             }
             .home-details-sub-heading {
               width: 100%;
