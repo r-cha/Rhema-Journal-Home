@@ -21,7 +21,7 @@ const Home = (props) => {
                 What is God speaking?
               </h1>
               <span className="home-hero-sub-heading">
-                Pray through His written Word to hear His spoken word
+                Pray through His written word to hear His spoken word
               </span>
               <div className="home-btn-group">
                 <a
@@ -48,13 +48,13 @@ const Home = (props) => {
                 <span>word, statement, or utterance</span>
               </h2>
               <span className="home-details-sub-heading">
-                Track your Bible reading to form a rhythm of waiting on God to
-                reveal what He is speaking to you through His word.
+                God speaks. If you listen, He will
+                reveal what He wants to teach you through His written word.
               </span>
             </div>
             <img
-              alt="image"
-              src="/external/untitled.svg"
+              alt="Rhema Journal app icon"
+              src="/external/rhema3d.png"
               className="home-details-image"
             />
           </div>
@@ -69,8 +69,8 @@ const Home = (props) => {
               </div>
               <div className="home-container4">
                 <FeatureCard
-                  Heading="Daily Journal Entries"
-                  SubHeading="Read a new passage from the Bible every day to deepen your understanding and strengthen your faith"
+                  Heading="Easy Journal Entries"
+                  SubHeading="Add a new entry whenever you read the Word or hear from God"
                 ></FeatureCard>
                 <FeatureCard
                   Heading="Journal Templates"
@@ -92,10 +92,16 @@ const Home = (props) => {
           <div className="home-banner1">
             <h1 className="home-banner-heading heading2">Rhema Journal</h1>
             <span className="home-banner-sub-heading">
-              Record the Word of God spoken through Scripture
+              God speaks. Start recording 📝
             </span>
             <button className="home-hero-button1 button">
-              Join TestFlight Beta
+              <a
+                href="https://testflight.apple.com/join/Fg8mhlTe"
+                target="_blank"
+                rel="noreferrer noopener"
+                >
+                  Join TestFlight Beta
+              </a>
             </button>
           </div>
         </div>
@@ -256,9 +262,11 @@ const Home = (props) => {
             margin-bottom: var(--dl-space-space-twounits);
           }
           .home-details-image {
-            width: 400px;
             height: 400px;
+            width: 400px;
+            left: 0px;
             object-fit: cover;
+            overflow: visible;
             margin-left: var(--dl-space-space-fourunits);
           }
           .home-features {

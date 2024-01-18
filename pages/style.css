@@ -1,4 +1,8 @@
 :root {
+  --dl-color-sunlight: #EEDEBA;
+  --dl-color-bluesky: #B4C7F0;
+  --dl-color-moonlight: #181112;
+  --dl-color-darksky: #121425;
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;
   --dl-color-gray-800: #595959;

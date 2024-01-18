@@ -28,7 +28,7 @@ const FeatureCard = (props) => {
             background-color: var(--dl-color-gray-white);
           }
           .feature-card-icon {
-            fill: #d89b00;
+            fill: var(--dl-color-bluesky);
             width: 2rem;
             height: 2rem;
             flex-shrink: 0;
