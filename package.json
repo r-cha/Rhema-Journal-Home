@@ -1,24 +1,19 @@
 {
-  "name": "rhema-journal",
-  "version": "1.0.0",
-  "description": "A next project generated based on a UIDL document",
-  "main": "index.js",
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "export": "next export"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "author": "TeleportHQ",
-  "license": "MIT",
   "dependencies": {
-    "next": "^12.1.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "prop-types": "15.7.2"
-  },
-  "engines": {
-    "node": ">=18.x"
-  },
-  "devDependencies": {}
+    "@astrojs/check": "^0.4.1",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.2.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
 }

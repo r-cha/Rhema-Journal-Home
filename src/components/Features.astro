@@ -1,0 +1,44 @@
+---
+import FeatureCard from "./FeatureCard.astro";
+
+const features = [
+  {
+    Heading: "Easy Journal Entries",
+    SubHeading: "Add a new entry whenever you read the Word or hear from God",
+  },
+  {
+    Heading: "Journal Templates",
+    SubHeading: "Use common frameworks to guide your prayer and reading",
+  },
+  {
+    Heading: "No Notifications",
+    SubHeading:
+      "Direct your attention toward God, embrace simplicity, and eliminate hurry with an app that demands nothing",
+  },
+  {
+    Heading: "Designed to be Deleted",
+    SubHeading: "Build consistency with your phone, then move to pen and paper",
+  },
+];
+---
+
+<section
+  id="features"
+  class="py-8 w-full bg-[#414141] flex flex-col h-auto items-center justify-items-center"
+>
+  <div
+    class="px-4 max-w-6xl flex flex-col h-auto items-center justify-items-center"
+  >
+    <div class="flex flex-col items-center justify-items-start">
+      <h2
+        class="mb-6 text-4xl text-white font-semibold leading-relaxed"
+        style="font-family: 'Raleway';"
+      >
+        Journal Simply
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {features.map((feature) => <FeatureCard {...feature} />)}
+    </div>
+  </div>
+</section>

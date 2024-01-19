@@ -1,0 +1,1 @@
+export const APP_STORE_URL = "https://testflight.apple.com/join/Fg8mhlTe"

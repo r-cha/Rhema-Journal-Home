@@ -1,0 +1,31 @@
+---
+interface Props {
+  Heading: string;
+  SubHeading: string;
+}
+
+const props = Astro.props;
+---
+
+<div
+  class="relative w-full flex flex-row p-8 items-start justify-items-start rounded-lg bg-white"
+>
+  <svg
+    viewBox="0 0 731.4285714285713 1024"
+    class="text-bluesky size-8 flex-shrink-0 mr-6"
+  >
+    <path
+      fill="currentColor"
+      d="M658.286 146.286h-585.143v709.714l292.571-280.571 50.857 48.571 241.714 232v-709.714zM665.143 73.143c8.571 0 17.143 1.714 25.143 5.143 25.143 9.714 41.143 33.143 41.143 58.857v736.571c0 25.714-16 49.143-41.143 58.857-8 3.429-16.571 4.571-25.143 4.571-17.714 0-34.286-6.286-47.429-18.286l-252-242.286-252 242.286c-13.143 12-29.714 18.857-47.429 18.857-8.571 0-17.143-1.714-25.143-5.143-25.143-9.714-41.143-33.143-41.143-58.857v-736.571c0-25.714 16-49.143 41.143-58.857 8-3.429 16.571-5.143 25.143-5.143h598.857z"
+    ></path>
+  </svg>
+  <div class="flex flex-col gap-4 align-start justify-items-start">
+    <h3
+      class="leading-7 font-semibold text-xl md:text-3xl"
+      style="font-family: 'Raleway';"
+    >
+      {props.Heading}
+    </h3>
+    <span class="text-grayish leading-relaxed">{props.SubHeading}</span>
+  </div>
+</div>
