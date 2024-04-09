@@ -1,39 +1,51 @@
 ---
+import FeatureCard from "./FeatureCard.astro";
 
+const features = [
+  {
+    Heading: "Easy Journal Entries",
+    SubHeading: "Add a new entry whenever you read the Word or hear from God",
+  },
+  {
+    Heading: "Journal Templates",
+    SubHeading: "Use common frameworks to guide your prayer and reading",
+  },
+  {
+    Heading: "No Notifications",
+    SubHeading:
+      "Direct your attention toward God, embrace simplicity, and eliminate hurry with an app that demands nothing",
+  },
+  {
+    Heading: "Designed to be Deleted",
+    SubHeading: "Build consistency with your phone, then move to pen and paper",
+  },
+];
 ---
 
 <section
   id="details"
-  class="w-full flex flex-col h-auto items-center justify-items-center"
+  class="w-full flex flex-col h-auto items-center
+justify-items-center"
 >
   <div class="grid grid-cols-1 md:grid-cols-2 px-4 max-w-4xl">
-    <div class="flex flex-col self-center gap-2 text-right">
-      <div
-        class="flex flex-col gap-2 font-bold leading-relaxed text-2xl md:text-4xl"
-      >
-        <h2>ῥῆμα (rhêma) n :</h2>
-        <h2 class="leading-none">word, statement, or utterance</h2>
-      </div>
-      <span class="text-gray-700 text-lg text-right leading-relaxed mb-8">
-        "Whoever is of God hears the words [ῥῆμα] of God.”
-        <sup>
-          <a
-            href="https://www.blueletterbible.org/esv/jhn/8/47/p0/t_conc_1005047"
-            class="text-blue"
-          >
-            ^
-          </a>
-        </sup>
-        <br />
-        Are you listening for His voice?
-      </span>
+    <div
+      class="flex flex-col self-center gap-2 text-left md:text-right leading-relaxed text-2xl md:text-4xl"
+    >
+      <h3>ῥῆμα (rhêma):</h3>
+      <h3>word, statement, or utterance</h3>
     </div>
-    <div class="flex items-start overflow-x-hidden md:overflow-x-visible">
+    <div
+      class="flex items-start overflow-x-hidden md:overflow-x-visible pl-8 md:pl-0 order-first md:order-last"
+    >
       <img
         alt="Rhema Journal app icon"
         src="/external/rhema3d.png"
-        class="object-left max-w-full h-52 md:h-[400px] object-cover"
+        class="object-left max-w-full h-32 md:h-[200px] object-cover"
       />
     </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+    {features.map((feature) => <FeatureCard {...feature} />)}
   </div>
 </section>
