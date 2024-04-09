@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --dl-color-morning: #fdf5d3;
   --dl-color-sunlight: #EEDEBA;
@@ -47,4 +51,35 @@
 }
 img {
   all: inherit;
+}
+
+
+@layer components {
+  .jesus {
+    color: red;
+  }
+  .scroll-left {
+    animation: marqueel 2500s linear infinite;
+  }
+  .scroll-right {
+    animation: marqueer 2500s linear infinite;
+  }
+}
+
+@keyframes marqueel {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marqueer {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
